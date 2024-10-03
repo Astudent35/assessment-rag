@@ -1,5 +1,6 @@
 import asyncio
 import streamlit as st
+from datetime import datetime
 from sentence_transformers import SentenceTransformer
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
@@ -15,7 +16,8 @@ user_query = st.text_input("Ask a question about Spotify reviews:")
 
 
 if st.button('Submit'):
-    query_embedding = model.encode([user_query])
+    user_query_modified = f"{user_query}, this user query is asked at this time {datetime.now()}"
+    query_embedding = model.encode([user_query_modified])
 
     data = asyncio.run(fetch_data())
 
