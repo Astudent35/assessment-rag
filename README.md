@@ -1,3 +1,4 @@
+# Please read the data_embedding_README.md first
 # Spotify Review Analysis Chatbot
 
 This project provides a chatbot interface for analyzing Spotify reviews. The chatbot uses embeddings generated from review texts to find similar reviews and generate summaries based on user queries.
