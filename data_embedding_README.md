@@ -3,6 +3,8 @@
 - The dataset is containing about 3.4 million rows and I am not able to generate embeddings for all of them.
 - I have generated embeddings for about 100,000 rows and stored them in MongoDB.
 - Also to generate embeddings, this part usually requires a lot of RnD but I used models which were able to run locally which much memory usage.
+- The quality of the the generated response would be good if all the data is used but I was not able to generate embeddings for all the data.
+- In order to optimize the program it self, I would have to use a different model But that would require a lot of RnD.
 
 ## Data preprocessing Overview 
 
